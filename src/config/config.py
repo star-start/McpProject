@@ -22,9 +22,6 @@ class Config:
         self.base_url = os.getenv("BASE_URL", "https://dashscope.aliyuncs.com/compatible-mode/v1")
         # 如果没配置 默认用qwq-plus
         self.model = os.getenv("MODEL", "qwq-plus")
-
-
-
         # 验证必要配置
         self._validate_config()
 
